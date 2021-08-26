@@ -1,0 +1,95 @@
+*{      padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    color:black;
+    font-family:'Poppins', sans-serif;
+
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 1 ;
+    outline: 0;
+} 
+
+
+
+
+body #title h1{color:whitesmoke;}
+
+body{
+
+background: rgb(2,0,36);
+background: linear-gradient(283deg, rgba(2,0,36,0.5953256302521008) 0%, rgba(126,126,137,1) 0%, rgba(9,8,9,1) 63%);
+background-repeat: no-repeat;
+height: 100vh;
+background-position: center center fixed;
+background-size: cover;
+margin-left: 10%;
+margin-top:2%;
+
+
+}
+
+#fraseazul {
+color:rgb(123, 123, 255);
+}
+
+
+
+
+
+
+form{
+color: black;
+display: flex;
+flex-direction: column;
+border-radius: 3px;
+padding: 1em;
+float: right;
+margin-right: 30px;
+background-color: rgba(245, 245, 245, 0.863);
+border-radius: 15px;
+}
+
+label{padding: .5em 1em .5em 0;}
+
+fieldset{
+
+border:0;
+}
+
+
+
+.input{
+
+
+flex: 6; 
+
+margin-bottom: 4px;
+border-radius: 5px;
+background-color: #7e7e8900;
+
+
+}
+button{
+background-color:rgb(123, 123, 255);
+border-radius:5px;
+color:whitesmoke;
+width:25%;
+margin:auto;
+
+}
+
+.buscacep{
+
+    flex: 6; 
+
+
+margin-bottom: 4px;
+border-radius: 5px;
+background-color: #7e7e8900;
+
+width:35%;
+
+}

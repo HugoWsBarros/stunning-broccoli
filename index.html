@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/form.css">
+    <title>jobsNET - Cadastro de curriculos</title>
+</head>
+<body>
+
+    <div id="title">
+        
+        <h1>jobsNET <br/>
+        Onde quer que exista<br/>
+        uma necessidade<br/>
+        <div id="fraseazul">há uma oportunidade.</div>
+      
+
+    </h1></div>
+
+
+
+    <div id="wrap">
+
+        
+        
+        
+        
+    <form action="http://localhost:3003/" method="POST" id="formulario" onblur="pesquisacep(this.value);">
+
+        <h2>Cadastre-se:<br/> </h2>
+
+
+    <fieldset>
+        
+        <div>
+            <label for="nome" >Nome Completo</label>
+            <input type="text" name="nome" id="nome" class="input" required=""/>
+            
+        </div>
+
+        <div> 
+            
+            <label for="cargo">Cargo Pretendido</label> 
+            <input type="text" name="cargo" id="cargo" class="input"/>
+            
+        </div>
+
+        <div>
+
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data" id="data" class="input" required=""/>
+
+        </div>
+
+        <div>
+            
+            <label for="estadocivil">Estado Civil</label> 
+            <select name="estadocivil" id="estadocivil" class="input">
+                
+                
+			    <option selected disabled>Selecione...</option>
+                <option >Casado(a)</option>
+                <option >Viúvo(a)</option>
+                <option >Solteiro(a)</option>
+            </select>
+
+
+        </div>
+
+
+        <div>
+
+            <label for="genero" >Gênero</label>
+			<select id="genero" class="input">
+              
+			  <option selected disabled>Selecione...</option>  
+			  <option >Homem-CIS</option>
+			  <option >Mulher-CIS</option>
+			  <option >Homem-Trans</option>
+			  <option >Mulher-Trans</option>
+			  <option >Não-binário</option>	  
+			  
+			</select>
+
+        </div>
+
+       
+
+           
+            
+        
+    </fieldset>
+
+    
+    <fieldset>
+        
+        <label>Cep:
+            <input  name="cep" type="text" id="cepi" value="" size="10" maxlength="9" class="buscacep"
+                   onblur="pesquisacep(this.value);" /></label><br />
+            <label>Rua:
+            <input name="rua" type="text" id="rua" size="60" class="buscacep"/></label><br />
+            <label>Bairro:
+            <input name="bairro" type="text" id="bairro" size="40" class="buscacep"/></label><br />
+            <label>Cidade:
+            <input name="cidade" type="text" id="cidade" size="40" class="buscacep"/></label><br />
+            <label>Estado:
+            <input name="uf" type="text" id="uf" size="2" class="buscacep"/>
+        </label><br />
+           
+        <div>
+            <label for="telefone">Telefone</label> 
+            <input type="tel" name="telefone" id="telefone" class="input"/>
+        </div>
+
+        <div>
+            <label for="celular">Celular</label> 
+            <input type="tel" name="celular" id="celular" class="input" required=""/>
+        </div>
+
+        <div>
+            <label for="email">E-mail</label> 
+            <input type="email" name="email" id="email" class="input" required=""/>
+        </div>
+
+       
+
+
+
+    </fieldset>
+
+
+    
+
+        <div> 
+            <label for="identidade">Identidade</label> 
+            <input type="number" name="identidade" id="identidade" class="input"/>
+        </div>
+
+        <div> 
+            <label for="cpf">CPF</label> 
+            <input type="number" name="cpf" id="cpf" class="input"/>
+        </div>
+
+     
+        <div>
+            
+            <label>Veículo</label> 
+        <label>
+            <input type= "radio" name="habilitacao" value="sim"  class="input"/>Sim
+        </label>
+
+        <label>
+            <input type="radio" name="habilitacao" value="não" class="input" checked>Não
+        </label>
+
+        </div>
+
+
+
+        <div>
+            
+            <label>Catergoria CNH</label> 
+
+        <label>
+            <input type="radio" name="categoriahab" value="CNH D" id="categoriahab" checked>Não Possui
+        </label>
+        <label>
+            <input type= "radio" name="categoriahab" value="CNH A"   id="categoriahaba" /> A
+        </label>
+
+        <label>
+            <input type="radio" name="categoriahab" value="CNH B"  id="categoriahabb"> B
+        </label> <br/>
+
+        <label>
+            <input type="radio" name="categoriahab" value="CNH C"  id="categoriahabc"> C
+        </label>
+
+        <label>
+            <input type="radio" name="categoriahab" value="CNH D" id="categoriahabd"> D
+        </label>
+
+        <label>
+            <input type="radio" name="categoriahab" value="CNH D" id="categoriahabe"> E
+        </label>
+
+        </div>
+        
+       
+                  
+
+
+         
+
+
+    
+
+
+    <button>Enviar</button>
+
+
+
+</form>
+
+</div>
+<script src="/form.js"></script>
+</body>
+</html>

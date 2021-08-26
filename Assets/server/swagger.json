@@ -1,0 +1,98 @@
+{
+     "openapi": "3.0.0",
+     "info":{
+         "title": "API jobsNET",
+         "descripton": "API com finalidade de armazenamento de curriculos",
+         "version": "0.0.1"
+
+     },
+
+     "servers": [
+         {
+             "url": "http://localhost:3003/",
+             "description": "ambiente de desenvolvimento"
+         }
+        
+], 
+
+    "paths":{
+        "/register": {
+            "post": {
+                "sumary": "Cadastro",
+                "description": "rota de cadastro de informações (nome, email, gênero, cpf, endereço, identidade, cep",
+                "tags":["Usuário", "candidato"],
+                "requestBody": {
+                    "content":{
+                        "application/json":{
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"                                
+                                        },
+                                        "gender": {
+                                            "type":"string"
+                                        },
+                                        "cargo":{
+                                            "type":"string"
+                                        },
+
+                                        "cep":{
+                                            "type":"string"
+                                        },
+                                        "rua":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "bairro":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "cidade":{
+                                            "type":"string"
+                                        
+                                        },
+                                        
+                                        "uf":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "telefone":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "celular":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "email":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "identidade":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "cpf":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "habilitação":{
+                                            "type":"string"
+                                        
+                                        },
+                                        "categoriahab":{
+                                            "type":"string"
+                                        
+                                        }
+
+                                        
+                                        }
+                            
+                                }
+                            }
+                        }
+                    }
+                }
+
+    }
+    }}
